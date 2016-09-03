@@ -1,18 +1,22 @@
-#btn-container {
-text-align: center;
+body {
+  background-color: #044A6E;
+  padding-top: 50px;
+  padding-bottom: 20px;
 }
 
+#quote {
+  background-color: #000;
+  font-size: large;
+  padding: 10px 20px 5px 20px;
+  color: #FAFAFA;
+}
 
+#author {
+  float: right;
+  margin: 10px 20px 0px 0px;
+  color: #FAFAFA;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
+#btn-container {
+text-align: left;
+}
