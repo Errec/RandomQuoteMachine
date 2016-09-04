@@ -1,22 +1,89 @@
+@import 'https://fonts.googleapis.com/css?family=Monoton';
+
 body {
   background-color: #044A6E;
-  padding-top: 50px;
+  color: #F4F4F4;
+  padding-top: 60px;
   padding-bottom: 20px;
 }
 
+#quote-container {
+    background-color: #151515;
+    min-height: 400px;
+    max-width: 90%;
+    position: relative;
+    box-shadow:0 20px 32px 0 rgba(0,0,0,.50),0 25px 55px 0 rgba(0,0,0,.40);
+}
+
+@media all and (min-width: 960px) {
+  #quote {
+    font-size: 42px;
+  }
+  #author {
+  font-size: 22px;
+  }
+}
+
+@media all and (max-width: 959px) and (min-width: 400px) {
+  #quote {
+    font-size: 38px;
+  }
+  #author {
+  font-size: 20px;
+  }
+}
+
+@media all and (max-width: 399px) and (min-width: 50px) {
+  #quote {
+    font-size: 34px;
+  }
+  #author {
+  font-size: 18px;
+  }
+}
+
 #quote {
-  background-color: #000;
-  font-size: large;
-  padding: 10px 20px 5px 20px;
-  color: #FAFAFA;
+  float: left;
+  padding: 5px 10px 40px 10px;
+  font-family: 'Monoton', cursive;
+  word-spacing: 10px;
+  word-wrap: break-word;
+  display: inline-block;
+  word-break: break-word;
 }
 
 #author {
-  float: right;
-  margin: 10px 20px 0px 0px;
-  color: #FAFAFA;
+  float: left;
+  margin: 32px 20px 0px 0px;
 }
 
-#btn-container {
-text-align: left;
+#btn-list {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  list-style-type: none;
+  padding: 5px 15px 5px 20px;
 }
+
+#btn-list li:not(:first-child) {
+  margin-right: 0px;
+}
+
+#btn-list li{
+  color: #F4F4F4;
+  margin: 0 15px 0 0;
+  float: left;
+}
+
+#footer-container {
+  max-width: 90%;
+}
+
+footer {
+  padding: 80px 0px 0px 0;
+  display: block;
+  font-size: 85%;
+  text-align: end;
+  color: #F4F4F4;
+}
+

@@ -13,14 +13,14 @@ function tweetText() {
 function getNewQuote() {
   $.getJSON("http://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?", function(getQuote) {
   $("#quote").html(getQuote[0].content);
-  $("#author").text(getQuote[0].title);
+  $("#author").text("- " + getQuote[0].title);
   tweetText();
   });
 }
 
 $(document).ready(function(){
   getNewQuote();
-  $('.btn').on('click', getNewQuote);
+  $('#quote-btn').on('click', getNewQuote);
 });
 
 

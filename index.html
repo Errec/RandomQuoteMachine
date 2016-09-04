@@ -8,6 +8,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="css/main.css">
 
@@ -17,24 +18,28 @@
     </head>
     <body>
 
-    <div id="btn-container" class="container">
-      <p><a id="btn1" class="btn btn-primary btn-lg" href="#" role="button">New Quote</a></p>
-    </div>
+        <div id="quote-container" class="container">
+            <div>
+                <p id="quote"></p>
+            </div>
+            <ul id="btn-list">
+              <li><a id="quote-btn" class="btn btn-primary">Next Quote</a></li>
+              <li><a id="twitter-btn" class=" btn btn-primary .twitter-share-button btn-block " href='https://twitter.com/intent/tweet?text='><span class="fa fa-twitter fa-1x"></span> Tweet it</a></li>
+            </ul>
+        </div>
 
-    <div id="quote-container" class="container">
-        <p id="quote"></p>
-        <span><em id="author"></em></span>
-    </div>
+        <div id="author-container" class="container">
+            <div><em id="author"></em></div>
+        </div>
 
-    <div id="share-container" class="container">
-        <a class=".twitter-share-button" href='https://twitter.com/intent/tweet?text='>Tweet it</a>
-    </div>
+        <div id="footer-container" class="container">
+            <footer><p>© 2016 ErreC • All Rights Reserved</p></footer>
+        </div>
 
-
-    <script src="http://platform.twitter.com/widgets.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
+        <script src="http://platform.twitter.com/widgets.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
